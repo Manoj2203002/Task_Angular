@@ -1,0 +1,44 @@
+<main class="container">
+    <div class="header">
+      <h1>Organize your life, finally.</h1>
+      <p>Simplify life for both you and your team with the help of this task manager and to-do list application.</p>
+    </div>
+  
+    <div class="task-entry">
+      <h2>Task Entry</h2>
+      <input type="date" placeholder="Starting Date" [(ngModel)]="startingdate" />
+      <input type="text" placeholder="Enter the Heading" [(ngModel)]="Heading" />
+      <input type="date" placeholder="Due Date" [(ngModel)]="DueDate" />
+      <textarea placeholder="Describe the task" rows="5" cols="30" [(ngModel)]="content"></textarea>
+      <button class="btn" (click)="onclick()">Submit</button>
+    </div>
+  
+    <div class="task-list">
+      <h3>The Tasks Todo</h3>
+      <ul>
+        <li *ngFor="let x of list" class="task-item">
+          <div class="task-info">
+            <p><strong>ID:</strong> {{ x.id }}</p>
+            <p><strong>Start:</strong> {{ x.starting }}</p>
+            <p><strong>Heading:</strong> {{ x.heading }}</p>
+            <p><strong>Due:</strong> {{ x.due }}</p>
+            <p><strong>Content:</strong> {{ x.content }}</p>
+          </div>
+          <div class="task-actions">
+            <button class="btn" (click)="edit_(x)">Edit</button>
+            <button class="btn delete" (click)="delete(x.id)">Delete</button>
+          </div>
+  
+          <div class="edit-form" *ngIf="edit_id == x.id">
+            <input type="date" [(ngModel)]="edit_starting" />
+            <input type="text" [(ngModel)]="edit_heading" />
+            <input type="date" [(ngModel)]="edit_DueDate" />
+            <textarea rows="5" cols="30" [(ngModel)]="edit_content" placeholder="Describe the task"></textarea>
+            <button class="btn cancel" (click)="cancle()">Cancel</button>
+            <button class="btn update" (click)="update()">Update</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+  

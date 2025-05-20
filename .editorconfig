@@ -1,4 +1,4 @@
-# Editor configuration, see https://editorconfig.org
+# edit_or configuration, see https://edit_orconfig.org
 root = true
 
 [*]

@@ -1,0 +1,105 @@
+/* Overall page */
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fefefe;
+    color: #333;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .header h1 {
+    color: #ff6600;
+  }
+  .header p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Form section */
+  .task-entry input,
+  .task-entry textarea,
+  .edit-form input,
+  .edit-form textarea {
+    display: block;
+    width: 95%;
+    margin: 0.5rem 0;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .task-entry {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fff5eb;
+    border: 1px solid #ffd9b3;
+    border-radius: 10px;
+  }
+  
+  /* Task list */
+  .task-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-left: 6px solid #ffa500;
+    border-radius: 10px;
+  }
+  
+  .task-info p {
+    margin: 0.3rem 0;
+  }
+  
+  /* Buttons */
+  .btn {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    margin: 0.4rem 0.4rem 0 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #e69500;
+  }
+  
+  .btn.delete {
+    background-color: #ff4d4d;
+  }
+  .btn.delete:hover {
+    background-color: #e60000;
+  }
+  
+  .btn.cancel {
+    background-color: #999;
+  }
+  .btn.cancel:hover {
+    background-color: #777;
+  }
+  
+  .btn.update {
+    background-color: #4CAF50;
+  }
+  .btn.update:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Edit form */
+  .edit-form {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+  }
+  
