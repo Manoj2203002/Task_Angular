@@ -20,7 +20,12 @@
     font-size: 1.1rem;
     color: #666;
   }
-  
+  .success {
+    color: green;
+  }
+  .error {
+    color: red;
+  }
   /* Form section */
   .task-entry input,
   .task-entry textarea,

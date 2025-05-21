@@ -3,7 +3,7 @@
       <h1>Organize your life, finally.</h1>
       <p>Simplify life for both you and your team with the help of this task manager and to-do list application.</p>
     </div>
-  
+    <p [ngClass]="{ 'success': isSuccess, 'error': isError }">Status Message</p>
     <div class="task-entry">
       <h2>Task Entry</h2>
       <input type="date" placeholder="Starting Date" [(ngModel)]="startingdate" />
